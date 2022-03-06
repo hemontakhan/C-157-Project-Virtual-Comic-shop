@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Comic Shop</title>
+ <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> 
+ <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+
+ <script src="js/Comics.js"></script>
+</head>
+<body>
+ <a-scene>
+
+ <a-sky color="#90CAF9"></a-sky>
+
+ <a-plane
+ id="shop-floor"
+ color="#78909c"
+ width="200"
+ height="100"
+ rotation="-90 0 0"
+ 
+    >
+</a-plane>
+
+ <a-entity id="posterContainer" poster></a-entity>
+
+ <a-camera position="0 10 20">
+
+ <!--Title-->
+ <a-entity id="shop-title" position='0 0.7 -1' text="font: exo2bold;align: center;width: 2.5;value: VIRTUAL COMIC SHOP"></a-entity>
+ <a-entity id="shop-subtite" position='0 0.5 -1' text="font: dejavu; align: center;width: 1;value: IT'S TIME TO READ COMICS VIRTUALLY "></a-entity>
+
+ 
+</a-camera>
+
+</a-scene>
+</body>
+</html>
